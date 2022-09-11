@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 5vh;
+  margin-top: 10vw;
 }
 button {
   all: unset;
@@ -73,6 +73,14 @@ a {
 #new-quote:hover,
 #tweet-quote:hover {
   color: var(--color-secondary);
+}
+.description {
+  text-align: center;
+  position: absolute;
+  bottom: 3%;
+  font-size: 70%;
+  width: 100vw;
+  padding: 0 2rem;
 }
 
 @media only screen and (min-width: 600px) {
