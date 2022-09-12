@@ -31,6 +31,11 @@ a {
   text-decoration: none;
   color: inherit;
 }
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #quote-box {
   display: flex;
@@ -42,6 +47,20 @@ a {
   padding: 2rem;
   font-family: 'Rampart One', cursive;
   font-size: 7vw;
+}
+.error,
+.loading {
+  font-family: 'Rampart One', cursive;
+  color: #970b09;
+  font-size: 5vw;
+  text-align: center;
+  width: 50vw;
+}
+.align-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #author {
