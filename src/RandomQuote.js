@@ -2,7 +2,7 @@ import './RandomQuote.css';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-function RandomQuote() {
+export default function RandomQuote() {
   const [quote, setQuote] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -40,7 +40,7 @@ function RandomQuote() {
         {quote && (
           <div id="quote-box">
             <div id="text">"{quote.text}"</div>
-            <div id="author">({quote.author})</div>
+            <div id="author">({quote.author ? quote.author : 'Author is unknown'})</div>
             <div className="btn-container">
               <div className="btn">
                 <button id="new-quote" onClick={fetchRandomQoute}>
@@ -62,14 +62,16 @@ function RandomQuote() {
         )}
       </div>
 
-      <div class="description">
-        <p>
+      <div className="description">
+        <a
+          href="https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-random-quote-machine"
+          target="_blank"
+          rel="noreferrer"
+        >
           freeCodeCamp - Front End Development Libraries Projects - Build a Random Quote
           Machine
-        </p>
+        </a>
       </div>
     </section>
   );
 }
-
-export default RandomQuote;
