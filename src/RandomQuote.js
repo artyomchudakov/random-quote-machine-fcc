@@ -1,7 +1,7 @@
-import './App.css';
+import './RandomQuote.css';
 import { useState, useEffect } from 'react';
 
-function App() {
+function RandomQuote() {
   const [quote, setQuote] = useState({
     text: 'Do more than dream: work.',
     author: 'William Arthur Ward',
@@ -60,4 +60,4 @@ async function getAllQuotes(url) {
   }
 }
 
-export default App;
+export default RandomQuote;
