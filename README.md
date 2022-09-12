@@ -2,12 +2,12 @@
 
 freeCodeCamp - Front End Development Libraries Projects - Build a Random Quote Machine
 
-## Great resourses
+## Great Resources
 
 Colors:
 
-Generate color paettes: https://coolors.co/a1d2ce-78cad2-62a8ac-5497a7-50858b
+Generate color palettes: https://coolors.co/a1d2ce-78cad2-62a8ac-5497a7-50858b
 
-SVG Background:
+SVG Backgrounds:
 
 Customize and apply backgrounds fast https://www.svgbackgrounds.com/
